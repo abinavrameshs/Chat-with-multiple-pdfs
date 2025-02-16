@@ -1,0 +1,19 @@
+[project]
+name = "Chat-with-multiple-pdfs"
+version = "0.1.0"
+description = "Chat with Multiple PDFs using Langchain and Google Gemini Pro"
+authors = [
+    {name = "Abinav Ramesh", email = "abinavrameshs@gmail.com"},
+]
+dependencies = ["streamlit>=1.42.0", "google-genai>=1.2.0", "python-dotenv>=1.0.1", "langchain>=0.3.18", "PyPDF2>=3.0.1", "chromadb>=0.6.3", "faiss-cpu>=1.10.0", "langchain-google-genai>=2.0.9", "langchain-community>=0.3.17"]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "GNU"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
